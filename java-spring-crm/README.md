@@ -33,18 +33,18 @@
 
 ## 🖼 画面キャプチャ
 - 顧客一覧
-  <img width="1872" height="430" alt="image" src="https://github.com/user-attachments/assets/a03fd43a-ec2b-46db-806f-878cb16464fc" />
+  <img width="1864" height="424" alt="image" src="https://github.com/user-attachments/assets/b9a86459-3021-429b-8e87-d872d0f70e89" />
  
 - ダッシュボード
   <img width="1885" height="726" alt="image" src="https://github.com/user-attachments/assets/ad25fd21-3ee5-4754-a392-78ba2a687023" />
 
 - 顧客詳細
-  <img width="1857" height="698" alt="image" src="https://github.com/user-attachments/assets/7da10a11-b3e0-4064-958f-f32d4b40499e" />
+  <img width="1852" height="707" alt="image" src="https://github.com/user-attachments/assets/b795d89a-4e1a-4fb1-a517-2505ff6b231f" />
   <img width="1849" height="546" alt="image" src="https://github.com/user-attachments/assets/b8c64bad-0b7c-4f50-acff-553dbed15ef1" />
 
 
 - 編集画面  
-  <img width="1860" height="648" alt="image" src="https://github.com/user-attachments/assets/60fbf01e-74e5-455b-9c50-26682b37931e" />
+  <img width="1866" height="647" alt="image" src="https://github.com/user-attachments/assets/b9308bce-0ea4-4e47-a71a-bb6881fd4938" />
 
 ---
 
