@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+
+<h2>ダッシュボード</h2>
+
+<a href="/customers" class="btn btn-outline-primary btn-sm mb-3">顧客一覧へ戻る</a>
+
+<div class="row mt-4">
+
+    <div class="col-md-4">
+        <div class="card text-center p-3">
+            <h5>今日のアクション</h5>
+            <h2 th:text="${todayCount}"></h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center p-3">
+            <h5>今週のアクション</h5>
+            <h2 th:text="${weekCount}"></h2>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center p-3">
+            <h5 class="text-danger">期限切れ案件</h5>
+            <h2 class="text-danger" th:text="${overdueCount}"></h2>
+        </div>
+    </div>
+
+</div>
+
+<h3 class="mt-5">ステータス別件数</h3>
+
+<table class="table table-bordered mt-3">
+    <tr><th>見込み</th><td th:text="${prospect}"></td></tr>
+    <tr><th>アプローチ中</th><td th:text="${approach}"></td></tr>
+    <tr><th>商談中</th><td th:text="${negotiation}"></td></tr>
+    <tr><th>見積提示</th><td th:text="${estimate}"></td></tr>
+    <tr><th>成約</th><td th:text="${contract}"></td></tr>
+    <tr><th>失注</th><td th:text="${lost}"></td></tr>
+</table>
+
+</body>
+</html>

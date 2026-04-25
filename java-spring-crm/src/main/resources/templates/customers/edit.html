@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>顧客編集</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="p-4">
+
+<h2>顧客編集</h2>
+
+<form th:action="@{'/customers/update/' + ${customer.id}}" 
+      th:object="${customer}" 
+      method="post">
+
+    <div class="mb-3">
+        <label class="form-label">名前</label>
+        <input type="text" th:field="*{name}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">メール</label>
+        <input type="email" th:field="*{email}" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">電話</label>
+        <input type="text" th:field="*{phone}" class="form-control">
+    </div>
+
+    <!-- ★ ステータス（選択式） -->
+    <div class="mb-3">
+        <label class="form-label">ステータス</label>
+        <select th:field="*{status}" class="form-select">
+            <option value="見込み">見込み</option>
+            <option value="アプローチ中">アプローチ中</option>
+            <option value="商談中">商談中</option>
+            <option value="見積提示">見積提示</option>
+            <option value="成約">成約</option>
+            <option value="失注">失注</option>
+        </select>
+    </div>
+
+    <!-- ★ 次回アクション日（追加） -->
+    <div class="mb-3">
+        <label class="form-label">次回アクション日</label>
+        <input type="date" th:field="*{nextActionDate}" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">保存</button>
+
+    <!-- ★ 一覧に戻るボタン（任意） -->
+    <a th:href="@{/customers}" class="btn btn-secondary ms-2">一覧に戻る</a>
+
+</form>
+
+</body>
+</html>
