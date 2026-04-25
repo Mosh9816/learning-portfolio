@@ -79,11 +79,15 @@
 ## 📦 セットアップ方法
 
 ```bash
+## 📦 セットアップ方法
 # リポジトリを clone
 git clone <your-repo-url>
 
-# プロジェクトを起動（Spring Boot）
-./mvnw spring-boot:run
+# プロジェクトのディレクトリへ移動
+cd java-spring-crm
+
+# Spring Boot アプリを起動（Gradle）
+./gradlew bootRun
 ```
 
 ブラウザで以下にアクセス：
