@@ -5,7 +5,6 @@
 - 商品別売上
 
 `input.csv` を置いてスクリプトを実行するだけで、3種類の集計結果が自動生成されます。
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4768787e-830c-4548-8289-a75109138031" />
 
 ---
 
@@ -25,6 +24,16 @@ python aggregate.py
 
 ## 📤出力されるファイル
 
+- `monthly_sales.csv`（月別売上）
+- `staff_sales.csv`（担当者別売上）
+- `product_sales.csv`（商品別売上）
+
+---
+
+## 🖼 画面キャプチャ
+- `input.csv`
+  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4768787e-830c-4548-8289-a75109138031" />
+  
 - `monthly_sales.csv`（月別売上）
   <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/863b80a0-bfb6-4635-b132-3cd099797bd0" />
 
