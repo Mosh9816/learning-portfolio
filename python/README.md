@@ -10,14 +10,19 @@
 
 ## 🛠️使用方法（VS Code）
 
-1. このフォルダを VS Code で開く  
-2. 仮想環境を有効化  
+1. 任意で作成したフォルダに以下ファイルを格納
+  - aggregate.py
+  - input.csv
+
+2. 方法1.で作成したフォルダを VS Code で開く  
+
+3. 仮想環境を有効化  
 .venv\Scripts\activate
 
-3. 必要なライブラリをインストール  
+4. 必要なライブラリをインストール  
 uv pip install pandas
 
-4. スクリプトを実行  
+5. スクリプトを実行  
 python aggregate.py
 
 ---
