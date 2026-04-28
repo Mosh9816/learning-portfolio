@@ -1,14 +1,11 @@
-# 📊Python Automation Tools  
-Excel/CSV 自動集計ツール
-
-## 📘概要
+# 📊Excel/CSV 自動集計ツール  
 売上データ（CSV）を読み込み、以下の集計を自動で行う Python ツールです。
-
 - 月別売上
 - 担当者別売上
 - 商品別売上
 
 `input.csv` を置いてスクリプトを実行するだけで、3種類の集計結果が自動生成されます。
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/4768787e-830c-4548-8289-a75109138031" />
 
 ---
 
@@ -25,11 +22,17 @@ uv pip install pandas
 python aggregate.py
 
 ---
+
 ## 📤出力されるファイル
 
 - `monthly_sales.csv`（月別売上）
+  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/863b80a0-bfb6-4635-b132-3cd099797bd0" />
+
 - `staff_sales.csv`（担当者別売上）
+  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/063f1f4c-27a3-4110-b84c-e78dc712d4ac" />
+
 - `product_sales.csv`（商品別売上）
+  <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/bf4370b6-a11f-4ec0-9235-bc294f1f3068" />
 
 ---
 
