@@ -1,7 +1,7 @@
-# Python Automation Tools  
+# 📊Python Automation Tools  
 Excel/CSV 自動集計ツール
 
-## 概要
+## 📘概要
 売上データ（CSV）を読み込み、以下の集計を自動で行う Python ツールです。
 
 - 月別売上
@@ -12,7 +12,7 @@ Excel/CSV 自動集計ツール
 
 ---
 
-## 使用方法（VS Code）
+## 🛠️使用方法（VS Code）
 
 1. このフォルダを VS Code で開く  
 2. 仮想環境を有効化  
@@ -25,7 +25,7 @@ uv pip install pandas
 python aggregate.py
 
 ---
-## 出力されるファイル
+## 📤出力されるファイル
 
 - `monthly_sales.csv`（月別売上）
 - `staff_sales.csv`（担当者別売上）
@@ -33,13 +33,13 @@ python aggregate.py
 
 ---
 
-## 使用技術
+## 🧪使用技術
 - Python
 - pandas
 
 ---
 
-## ファイル構成
+## 📁ファイル構成
 ```
 portfolio/
 └── python/
