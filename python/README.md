@@ -33,7 +33,7 @@ python aggregate.py
 
 ---
 
-## 🧪使用技術
+## 🛠使用技術
 - Python
 - pandas
 
