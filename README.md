@@ -3,14 +3,11 @@
 
 ---
 
-## 📦 学習成果物一覧（Learning Portfolio）
+## 📦 学習成果物一覧（Learning Portfolio）  
+これらは学習過程で作成したアプリケーションやツールをまとめたものです。
 
-これらの成果物は、学習過程で作成したアプリケーションやツールをまとめたものです。
+- [python-aggregation-tool](./python-aggregation-tool)   
+  Python と pandas を使用して作成した売上データの自動集計ツールです。
 
-- **Python 自動集計ツール**  
-  Python の基礎学習で作成したスクリプトやミニツールをまとめています。  
-  → [Python フォルダへ](./python-aggregation-tool)
-
-- **Java / Spring CRM アプリ**  
+- [java-spring-crm](./java-spring-crm)  
   Spring Boot を使用して作成した CRM（顧客管理）アプリケーションです。  
-  → [Java/Spring CRM フォルダへ](./java-spring-crm)
