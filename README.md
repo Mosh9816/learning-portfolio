@@ -7,9 +7,9 @@
 
 これらの成果物は、学習過程で作成したアプリケーションやツールをまとめたものです。
 
-- **Python 学習成果物**  
+- **Python 自動集計ツール**  
   Python の基礎学習で作成したスクリプトやミニツールをまとめています。  
-  → [Python フォルダへ](./python)
+  → [Python フォルダへ](./python-aggregation-tool)
 
 - **Java / Spring CRM アプリ**  
   Spring Boot を使用して作成した CRM（顧客管理）アプリケーションです。  
