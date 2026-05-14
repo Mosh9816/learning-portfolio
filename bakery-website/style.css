@@ -1,0 +1,236 @@
+/* ------------------------------
+   基本設定
+------------------------------ */
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "YuGothic", system-ui, sans-serif;
+  background-color: #f9f5ee;
+  color: #4b3b30;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   ヘッダー
+------------------------------ */
+header {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3e7d8;
+  border-bottom: 1px solid #e2d4c4;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #4b3b30;
+  font-size: 14px;
+}
+
+/* ------------------------------
+   トップページ（hero）
+------------------------------ */
+.hero {
+  text-align: center;
+  padding: 40px 8vw;
+}
+
+.hero-text {
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #4b3b30;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #7b6a5a;
+  margin-bottom: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin: 0 auto 24px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background-color: #d9e6c8;
+  color: #4b3b30;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------
+   セクション共通
+------------------------------ */
+section {
+  padding: 40px 8vw;
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 16px;
+  border-left: 6px solid #d9e6c8;
+  padding-left: 10px;
+}
+
+.intro {
+  max-width: 640px;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ------------------------------
+   こだわり・店舗案内（画像＋テキスト）
+------------------------------ */
+.about-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 260px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ------------------------------
+   メニューページ（カード型デザイン）
+------------------------------ */
+
+.menu-hero {
+  text-align: center;
+  padding: 40px 8vw 20px;
+}
+
+.menu-title {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #4b3b30;
+}
+
+.menu-sub {
+  font-size: 15px;
+  color: #7b6a5a;
+}
+
+.menu-list {
+  max-width: 980px; /* ← カード幅を広げた */
+  margin: 0 auto;
+  padding: 20px 8vw 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* ← 260px に拡大 */
+  gap: 32px;
+}
+
+.menu-item {
+  background-color: #fffaf2;
+  padding: 24px; /* ← 少し広げて余裕を持たせた */
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.menu-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.menu-name {
+  font-size: 17px; /* ← 18px → 17px に変更 */
+  margin-bottom: 8px;
+  color: #4b3b30;
+  white-space: nowrap; /* ← 改行禁止 */
+}
+
+.menu-desc {
+  font-size: 14px;
+  color: #6b5a4a;
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   フッター
+------------------------------ */
+footer {
+  padding: 24px 8vw 32px;
+  font-size: 12px;
+  color: #8a7a6a;
+  background-color: #f3e7d8;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ==============================
+   スマホ表示（幅768px以下）
+============================== */
+@media (max-width: 768px) {
+
+  .about-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .intro {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .menu-item {
+    padding: 20px;
+  }
+
+  .menu-img {
+    max-width: 260px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+  nav a {
+    font-size: 13px;
+    margin-left: 12px;
+  }
+}
