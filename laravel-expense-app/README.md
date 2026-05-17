@@ -1,115 +1,59 @@
-# 経費管理アプリ（Expense Manager）
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-このアプリは、日々の業務で発生する **経費の登録・編集・承認・削除** を  
-シンプルに管理できる Laravel 製の経費管理システムです。
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-「入力ミス防止」「承認フローの簡略化」「履歴の一元管理」を目的として開発しました。
+## About Laravel
 
----
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## 🚀 主な機能
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-### ■ 経費管理（CRUD）
-- 経費一覧表示（最新日付順）
-- 経費の新規登録
-- 経費の編集
-- 経費の削除
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### ■ 承認フロー
-- ステータス：未承認 / 承認済み
-- 一覧画面からワンクリックで承認可能
+## Learning Laravel
 
-### ■ UI/UX
-- CSS によるシンプルで見やすい UI
-- 入力フォームはカード風デザインで視認性を向上
-- ステータスは日本語表記（未承認 / 承認済み）
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
 
----
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## 🖼 画面キャプチャ
-- 経費一覧  
-  <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/48fc5bc4-e3ca-4ff4-88ef-8c59ab15a745" />
+## Laravel Sponsors
 
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-- 新規登録画面  
-  <img width="1919" height="873" alt="image" src="https://github.com/user-attachments/assets/15e79296-855c-463f-ba98-1f179bef5214" />
+### Premium Partners
 
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
-- 編集画面  
-  <img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/93bd02eb-5031-4ccd-966d-c65e65ce8665" />
+## Contributing
 
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
----
+## Code of Conduct
 
-## 💡 工夫したポイント
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-- **実務で使われる経費精算フローを意識**
-  - ステータス管理（未承認 / 承認済み）
-  - 日付・カテゴリ・備考など必要最低限の項目に絞って設計
+## Security Vulnerabilities
 
-- **UI の統一感**
-  - 一覧とフォームで同じ CSS を使用
-  - カード風フォームで入力しやすさを重視
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-- **コードのシンプルさ**
-  - Controller / Model / View の役割を明確に分離
-  - Laravel のリソース構造に沿った読みやすいコード
+## License
 
----
-
-## 🛠 使用技術
-
-- PHP 8  
-- Laravel 10  
-- SQLite  
-- Blade  
-- CSS（独自スタイル）
-
----
-
-## 📦 セットアップ方法
-
-```bash
-# リポジトリを clone
-git clone <your-repo-url>
-
-# プロジェクトへ移動
-cd laravel-expense-app
-
-# 依存関係をインストール
-composer install
-
-# 環境ファイルを作成
-cp .env.example .env
-
-# アプリキー生成
-php artisan key:generate
-
-# SQLite DB 作成
-touch database/database.sqlite
-
-# マイグレーション実行
-php artisan migrate
-
-# 開発サーバー起動
-php artisan serve
-```
-
-ブラウザで以下にアクセス：
-http://127.0.0.1:8000/expenses
-
----
-
-## 🔮 今後の改善案
-- 領収書画像アップロード機能
-- カテゴリのプルダウン化
-- ページネーション
-- 月別集計（ダッシュボード）
-- ログイン機能（Laravel Breeze / Fortify）
-
----
-
-## 📘 ライセンス
-このプロジェクトは自由に利用・改変できます。
-
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
